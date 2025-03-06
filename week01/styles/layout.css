@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(61, 59, 59);
+    color: white;
+    grid-column: span 3;
+    padding: 20px;
+    height: 100px;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    grid-column: span 2;
+    background-color: #e4e4e4;
+    padding: 20px;
+}
+
+aside {
+    padding: 20px;
+}
+
+footer {
+    grid-column: span 3;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+}
