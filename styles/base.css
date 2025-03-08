@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    height: 150px;
+    text-align: center;
+}
+header h1 {
+    padding: 20px;
+}
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+ }
+
+.card h2 {
+    grid-column: span 3;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: -20px -20px 20px -20px;
+    text-align: center;
+    height: 40px;
+}
+
+.card img {
+    grid-column: span 1;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.card p {
+    grid-column: span 2;
+}
+.state {
+    grid-column: span 2;
+}
+.state figure {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    max-width: 250px;
+}
+.state img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.state figcaption{
+    margin-top: 0.5rem;
+    font-style: italic;
+    text-align: center;
+}
+.card h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    text-align: center;
+    clear: both;
+}
+.card ul{
+    grid-column: span 3;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+footer p {
+    margin: 0.5rem 0;
+}
