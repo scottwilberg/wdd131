@@ -2,7 +2,6 @@
     --primary-color: red;
     --secondary-color: black;
     --background-color: white;
-    --font-family: 'Roboto', sans-serif;
     --header-padding: 20px;
     --card-padding: 20px;
     --card-margin: 20px auto;
@@ -16,7 +15,7 @@
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
