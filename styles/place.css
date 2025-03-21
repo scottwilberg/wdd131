@@ -36,7 +36,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
     padding: var(--header-padding);
     position: relative;
 }
@@ -91,7 +91,7 @@ header h1 {
 
 
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--background-color);
     text-align: center;
     padding: var(--header-padding) 0;
