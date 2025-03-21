@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <meta name="author" content="Scott Wilberg">
+    <meta name="description"
+        content="This is the place page of Scott Wilberg for course WDD 131 - Dynamic Web Fundamentals and is for demonstrating html, css, and javascript">
+</head>
+<body>
+    <header>
+        <h1>Egypt</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/egypt-large.webp" media="(min-width: 500px)">
+                <img src="images/egypt.webp" alt="Egypt" width="500" height= "700">
+            </picture>
+        </div>
+        <section class="card data-card">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <td><strong>Area:</strong></td>
+                    <td>1.01 million sq km</td>
+                </tr>
+                <tr>
+                    <td><strong>Population:</strong></td>
+                    <td>110.99 million</td>
+                </tr>
+                <tr>
+                    <td><strong>Capital:</strong></td>
+                    <td>Cairo</td>
+                </tr>
+                <tr>
+                    <td><strong>Languages:</strong></td>
+                    <td>Modern Standard Arabic</td>
+                </tr>
+                <tr>
+                    <td><strong>Currency:</strong></td>
+                    <td>Egyptian pound</td>
+                </tr>
+                <tr>
+                    <td><strong>Time Zone:</strong></td>
+                    <td>Eastern European Time (EET)</td>
+                </tr>
+                <tr>
+                    <td><strong>Calling Card:</strong></td>
+                    <td>011 20</td>
+                </tr>
+                <tr>
+                    <td><strong>Internet TLD:</strong></td>
+                    <td>.eg</td>
+                </tr>
+            </table>
+        </section>
+        <section class="card weather-card">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="weather cloud with rain and sun" width="150">
+            <table>
+                <tr>
+                    <td><strong>Temperature:</strong></td>
+                    <td>50 degrees F</td>
+                </tr>
+                <tr>
+                    <td><strong>Conditions:</strong></td>
+                    <td>windy</td>
+                </tr>
+                <tr>
+                    <td><strong>Wind:</strong></td>
+                    <td>50 mph</td>
+                </tr>
+                <tr>
+                    <td><strong>Wind Chill:</strong></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🛡️ Scott Wilberg 🛡️ Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

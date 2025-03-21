@@ -1,0 +1,11 @@
+@media (max-width: 499px) {
+    .weather-card h2 img {
+        display: inline;
+        /* Show the image in small view */
+    }
+
+    .weather-card h2::after {
+        display: none;
+        /* Hide the emoticon in small view */
+    }
+}

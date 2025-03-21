@@ -1,0 +1,73 @@
+@media (min-width: 500px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .data-card,
+    .weather-card {
+        position: absolute;
+        padding: 20px;
+    }
+
+    .data-card {
+        top: 20px;
+        left: 20px;
+        width: 350px;        
+    }
+
+    .card {
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: 20px;
+    }
+
+    .data-card h2 {
+        width: 80%;
+    }
+
+    .weather-card {
+        bottom: 20px;
+        right: 20px;
+        width: 260px;
+        margin-bottom: 200px;
+    }
+
+    .card h2 {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: var(--secondary-color);
+        text-align: left;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .card table {
+        color: var(--background-color);
+        padding: var(--table-padding);
+        font-size: 1em;
+        margin-top: var(--table-margin-top);
+        margin-left: var(--table-margin-left);
+    }
+
+    .weather-card h2 {
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+    .weather-card img {
+        display: none;
+        /* Hide the image by default */
+    }
+
+    .weather-card h2::after {
+        content: '⛅';
+        display: inline;
+        padding-left: 20px;
+        /* Show the emoticon by default */
+    }
+
+}
