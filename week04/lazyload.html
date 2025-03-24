@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/lazyload.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <meta name="author" content="Scott Wilberg">
+</head>
+<body>
+    <main>
+        <h1>Lazy Load Demonstration</h1>
+        <picture>
+            <img src="//picsum.photos/400/600/" alt="picsum Placeholder" loading="lazy" width="400" height="600">
+        </picture>
+        <caption>picsum Placeholder</caption>
+        <picture>
+            <img src="//picsum.photos/400/650/" alt="picsum Placeholder" loading="lazy" width="400" height="600">
+        </picture>
+        <caption>picsum Placeholder</caption>
+        <picture>
+            <img src="//picsum.photos/400/700/" alt="picsum Placeholder" loading="lazy" width="400" height="600">
+        </picture>
+        <caption>picsum Placeholder</caption>
+        <picture>
+            <img src="//picsum.photos/400/630/" alt="picsum Placeholder" loading="lazy" width="400" height="600">
+        </picture>
+        <caption>picsum Placeholder</caption>
+        <picture>
+            <img src="//picsum.photos/400/640/" alt="picsum Placeholder" loading="lazy" width="400" height="600">
+        </picture>
+        <caption>picsum Placeholder</caption>
+        <picture>
+            <img src="//picsum.photos/400/620/" alt="picsum Placeholder" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🛡️ Scott Wilberg 🛡️ Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
