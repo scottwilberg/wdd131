@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #264922;
+    --secondary-color: #451F0C;
+    --background-color: #CFE6AC;
+    --header-padding: 20px;
+    --card-padding: 20px;
+    --card-margin: 20px auto;
+
+    --card-max-width: 500px;
+    --card-border-radius: 8px;
+    --card-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --table-font-size: 0.9em;
+    --table-padding: 10px;
+    --table-margin-top: 10px;
+    --table-margin-left: 20px;
+}
+header {
+    font-family: 'Baumans', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: var(--header-padding);
+    display: grid;
+    grid-template-columns: 1fr;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: x-large;
+    align-items: center;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--background-color);
+    text-decoration: none;
+    font-size: large;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--background-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-align: center;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+}

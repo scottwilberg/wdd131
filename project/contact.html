@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wilberg-vegitable-garden.org | contact</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+    <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <meta name="author" content="Scott Wilberg">
+    <meta name="description"
+        content="This is the vegitable garden contact page of Scott Wilberg for course WDD 131 - Dynamic Web Fundamentals and is for demonstrating html, css, and javascript">
+</head>
+<body>
+    <header>
+        <h1>Welcome to wilberg-vegitable-garden.org Contact page</h1>
+        <button type="button" id="menu" title="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="siteplan.html" title="Home">Home</a></li>
+                <li><a href="seeds.html" title="Seeds">Seeds</a></li>
+                <li><a href="soil.html" title="Soil">Soil</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Reason For Contacting</legend>
+                <div>Inquiry</div>
+                    <label><input type="radio" name="inquiry" value="inquiry">General Inquiry</label>
+                    <label><input type="radio" name="inquiry" value="suggestion">Website Suggestion</label>
+                
+                    <label>Message: <textarea id="message" name="message" rows="5" placeholder="type message here"></textarea></label>
+               
+                    <label><input type="checkbox" name="subscribe" value="yes">Please subscribe me to the monthly newsletter</label>        
+            </fieldset>
+            <button type="submit">Request Information</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🛡️ Scott Wilberg 🛡️ Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
