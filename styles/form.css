@@ -3,6 +3,7 @@ header {
     padding: 2rem 2%;
     background-color: rgb(12, 2, 100);
     color: #fff;
+    font-family: 'Baumans', Arial;
 }
 
 header h1 {
