@@ -34,7 +34,9 @@ input[type="text"],
     width: 95%;
     margin-bottom: 5px;
 }
-
+span {
+    color: blue;
+}
 .rating {
     display: flex;
     justify-content: space-evenly;
