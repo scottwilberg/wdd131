@@ -25,6 +25,14 @@ form {
     border-radius: 2rem;
 }
 
+.product label,
+legend,
+.date label,
+.review label,
+.name label{
+    font-weight: bold;
+}
+
 label,
 select,
 textarea,
