@@ -1,0 +1,108 @@
+
+header {
+    padding: 2rem 2%;
+    background-color: rgb(12, 2, 100);
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+form {
+    max-width: 500px;
+    margin: 10px auto;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 2rem;
+}
+
+label,
+select,
+textarea,
+input[type="text"],
+.date input {
+    display: block;
+    width: 95%;
+    margin-bottom: 5px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.features div{
+    font-style: italic;
+}
+
+textarea{
+    padding-bottom: 5rem;
+}
+
+.product select, 
+.date input,
+input[type="text"] {
+    padding: .5rem;
+    font-size: 16px;
+}
+
+fieldset {
+    margin: 2rem 0;
+    border: none;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 96%;
+    max-width: 500px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 20px;
+}
+
+select:required,
+input:required {
+    border-left: solid 8px red;
+}
+
+select:required:valid,
+input:required:valid {
+    border-left: solid 8px green;
+}
+
+footer {
+    background-color: rgb(12, 2, 100);
+    padding: .5rem 2%;
+    text-align: center;
+    color:#fff;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Scott Wilberg</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <meta name="author" content="Scott Wilberg">
+    <meta name="description"
+        content="This is the home page of Scott Wilberg for course WDD 131 - Dynamic Web Fundamentals and is for demonstrating html, css, and javascript">
+
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset class="product">
+                <label>Product Name<select id="product" name="product" required>
+                    <option value="" disabled selected>Choose a Product...</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset class="rating">
+                <legend>Overall Rating:</legend>
+                <label>☆<input type="radio" name="rating" value="1" required></label>
+                <label>☆☆<input type="radio" name="rating" value="2"></label>
+                <label>☆☆☆<input type="radio" name="rating" value="3"></label>
+                <label>☆☆☆☆<input type="radio" name="rating" value="4"></label>
+                <label>☆☆☆☆☆<input type="radio" name="rating" value="5"></label>
+            </fieldset>
+            <fieldset class="date">
+                <label>Date of Installation:<input type="date" id="date" name="date" required></label>
+            </fieldset>
+
+            <fieldset class="features">
+                <legend>Which features did you find useful in the product?</legend>
+                <div>(Check all that apply)</div>
+                <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="design"> Design</label>
+            </fieldset>
+            <fieldset>        
+                <label>Written Review (Optional)<textarea id="review" name="review"></textarea></label>
+            </fieldset>    
+            <fieldset>
+                <label>Your Name: (Optional)<input type="text" id="yourname" name="yourname"></label>
+            </fieldset>
+            
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🛡️ Scott Wilberg 🛡️ Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
