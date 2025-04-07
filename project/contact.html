@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wilberg-vegitable-garden.org | contact</title>
+    <title>wilberg-vegetable-garden.org | contact</title>
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="stylesheet" href="styles/siteplan-large.css">
     <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
@@ -12,15 +12,15 @@
     <script src="scripts/getdates.js" defer></script>
     <meta name="author" content="Scott Wilberg">
     <meta name="description"
-        content="This is the vegitable garden contact page of Scott Wilberg for course WDD 131 - Dynamic Web Fundamentals and is for demonstrating html, css, and javascript">
+        content="This is the vegetable garden contact page of Scott Wilberg for course WDD 131 - Dynamic Web Fundamentals and is for demonstrating html, css, and javascript">
 </head>
 <body>
     <header>
-        <h1>Welcome to wilberg-vegitable-garden.org Contact page</h1>
+        <h1>Welcome to wilberg-vegetable-garden.org Contact page</h1>
         <button type="button" id="menu" title="Menu"></button>
         <nav>
             <ul class="navigation">
-                <li><a href="siteplan.html" title="Home">Home</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
                 <li><a href="seeds.html" title="Seeds">Seeds</a></li>
                 <li><a href="soil.html" title="Soil">Soil</a></li>
                 <li><a href="contact.html" title="Contact">Contact</a></li>
@@ -28,7 +28,7 @@
         </nav>
     </header>
     <main>
-        <form>
+        <form class="form">
             <fieldset>
                 <legend>Contact Information</legend>
                 <div>
@@ -40,15 +40,17 @@
             </fieldset>
             <fieldset>
                 <legend>Reason For Contacting</legend>
-                <div>Inquiry</div>
-                    <label><input type="radio" name="inquiry" value="inquiry">General Inquiry</label>
-                    <label><input type="radio" name="inquiry" value="suggestion">Website Suggestion</label>
-                
+                <h2>Inquiry</h2>
+                <div class="inquiry">
+                    <label>General Inquiry<input type="radio" name="inquiry" value="inquiry"></label>
+                    <label>Website Suggestion<input type="radio" name="inquiry" value="suggestion"></label>
+                    <label>Content Wishes<input type="radio" name="inquiry" value="content"></label>
+                </div>
                     <label>Message: <textarea id="message" name="message" rows="5" placeholder="type message here"></textarea></label>
                
                     <label><input type="checkbox" name="subscribe" value="yes">Please subscribe me to the monthly newsletter</label>        
             </fieldset>
-            <button type="submit">Request Information</button>
+            <input type="submit" value="Request Information"></input>
         </form>
     </main>
     <footer>

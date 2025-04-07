@@ -27,6 +27,7 @@ header {
     align-items: center;
 }
 
+
 nav {
     margin: 0 auto;
     max-width: 800px;
@@ -43,6 +44,7 @@ nav a {
     color: var(--background-color);
     text-decoration: none;
     font-size: large;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
@@ -84,3 +86,93 @@ footer {
     border: 1px solid #bbb;
     padding: 1rem;
 }
+
+form {
+    max-width: 600px;
+    margin: 10px auto;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 2rem;
+}
+
+.product label,
+legend,
+.date label,
+.review label,
+.name label {
+    font-weight: bold;
+}
+
+label,
+select,
+textarea,
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+.date input {
+    display: block;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.inquiry {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.inquiry label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+textarea {
+    padding-bottom: 5rem;
+    margin: 10px 0;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="tel"],
+label {
+    padding: .5rem;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+fieldset {
+    margin: 2rem 0;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--primary-color), #043b16);
+    color: var(--background-color);
+    border-radius: 6px;
+    padding: 1rem;
+    width: 96%;
+    max-width: 600px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 20px;
+}
+
+select:required,
+input:required {
+    border-left: solid 8px red;
+}
+
+select:required:valid,
+input:required:valid
+ {
+    border-left: solid 8px green;
+}
+

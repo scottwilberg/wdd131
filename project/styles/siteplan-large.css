@@ -10,6 +10,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         color: var(--secondary-color);
     }
+   
+    main figure {
+        text-align: right;
+    } 
 
     nav ul {
         display: flex;
@@ -30,8 +34,40 @@
 
     .container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         margin: 0 auto;
+        gap: 20px;
+        text-align: center;
+    }
+    .container img.soil {
+        border: 1px solid;
     }
 
+    .instructions-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .instructions {
+        flex-shrink: 0;
+    }
+    
+    figcaption {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .soil-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .text-content {
+        flex: 2;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
 }

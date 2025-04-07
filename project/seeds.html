@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wilberg-vegitable-garden.org | seeds</title>
+    <title>wilberg-vegetable-garden.org | seeds</title>
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="stylesheet" href="styles/siteplan-large.css">
     <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
@@ -12,15 +12,15 @@
     <script src="scripts/getdates.js" defer></script>
     <meta name="author" content="Scott Wilberg">
     <meta name="description"
-        content="This is the vegitable garden seeds page of Scott Wilberg for course WDD 131 - Dynamic Web Fundamentals and is for demonstrating html, css, and javascript">
+        content="This is the vegetable garden seeds page of Scott Wilberg for course WDD 131 - Dynamic Web Fundamentals and is for demonstrating html, css, and javascript">
 </head>
 <body>
     <header>
-        <h1>Welcome to wilberg-vegitable-garden.org Seeds page</h1>
+        <h1>Welcome to wilberg-vegetable-garden.org Seeds page</h1>
         <button type="button" id="menu" title="Menu"></button>
         <nav>
             <ul class="navigation">
-                <li><a href="siteplan.html" title="Home">Home</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
                 <li><a href="seeds.html" title="Seeds">Seeds</a></li>
                 <li><a href="soil.html" title="Soil">Soil</a></li>
                 <li><a href="contact.html" title="Contact">Contact</a></li>
@@ -29,11 +29,31 @@
     </header>
     <main>
         <h2>Seeds and Starts</h2>
-        <p>There are many different seeds that grow well in my climate.</p>
-        <figure>
-            <img class="hover" src="images/instructions.jpg" alt="growing instructions" width="250">
-            <figcaption>Growing Instructions Label</figcaption>
-        </figure>
+        <div class="instructions-container">
+            <p>There are many different seeds that grow well in my climate. The ones I plant from seed are acorn squash, Armenian Cucumber, Bush Beans, Butternut Squash, Cabbage, Carrot, Cucumber, Dark Red Beets, Radishes, Red Beets, Straightneck Squash, Sugar Snap Peas, Turnips, and Zucchini
+            <br><br>Others that I plant in my garden are Tomatoes, Bell Peppers, and hot Peppers. However, I buy starts to plant those and Onions I plant from bulbs.
+            <br><br>On the back of the seed packs it will tell you the time of year to plant, days to germinate, how deep to plant the seeds, how far apart to plant the seeds, and how long they take to grow.</p>
+            <figure class="instructions">
+                <img class="hover" src="images/instructions.webp" alt="growing instructions" width="250">
+                <figcaption>Growing Instructions Label</figcaption>
+            </figure>
+        </div>  
+        <fieldset class="product">
+            <label>Product Name
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Choose a Product...</option>
+                    <option value="acorn-squash">Acorn Squash</option>
+                    <option value="armenian-cucumber">Armenian Cucumber</option>
+                    <option value="bush-beans">Bush Beans</option>
+                    <!-- Add more seed options -->
+                </select>
+            </label>
+        </fieldset>
+        
+        <div id="seed-details">
+            <p>Please select a seed to see details.</p>
+        </div>
+
         <div class="container">
             <figure>
                 <img class="hover" src="images/acorn.jpg" alt="acorn squash" width="250">
@@ -68,8 +88,8 @@
                 <figcaption>Dark Red Beets</figcaption>
             </figure>
             <figure>
-                <img class="hover" src="images/raddish.jpg" alt="raddish" width="250">
-                <figcaption>Raddishs</figcaption>
+                <img class="hover" src="images/radish.jpg" alt="radish" width="250">
+                <figcaption>Radishs</figcaption>
             </figure>
             <figure>
                 <img class="hover" src="images/red-beet.jpg" alt="red beet" width="250">
