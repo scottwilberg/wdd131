@@ -32,87 +32,35 @@
         <div class="instructions-container">
             <p>There are many different seeds that grow well in my climate. The ones I plant from seed are acorn squash, Armenian Cucumber, Bush Beans, Butternut Squash, Cabbage, Carrot, Cucumber, Dark Red Beets, Radishes, Red Beets, Straightneck Squash, Sugar Snap Peas, Turnips, and Zucchini
             <br><br>Others that I plant in my garden are Tomatoes, Bell Peppers, and hot Peppers. However, I buy starts to plant those and Onions I plant from bulbs.
-            <br><br>On the back of the seed packs it will tell you the time of year to plant, days to germinate, how deep to plant the seeds, how far apart to plant the seeds, and how long they take to grow.</p>
+            <br><br>On the back of the seed packs it will tell you the time of year to plant, days to germinate, how deep to plant the seeds, how far apart to plant the seeds, and how long they take to grow.
+            <br><br>Pick a seed below from the drop down list to see the planting information.</p>
             <figure class="instructions">
-                <img class="hover" src="images/instructions.webp" alt="growing instructions" width="250">
+                <img class="hover" src="images/instructions.webp" alt="growing instructions" width="250" loading="lazy">
                 <figcaption>Growing Instructions Label</figcaption>
             </figure>
         </div>  
-        <fieldset class="product">
-            <label>Product Name
-                <select id="product" name="product" required>
-                    <option value="" disabled selected>Choose a Product...</option>
-                    <option value="acorn-squash">Acorn Squash</option>
-                    <option value="armenian-cucumber">Armenian Cucumber</option>
-                    <option value="bush-beans">Bush Beans</option>
-                    <!-- Add more seed options -->
-                </select>
-            </label>
-        </fieldset>
-        
-        <div id="seed-details">
-            <p>Please select a seed to see details.</p>
+        <div class="seed-selection-container">
+            <fieldset class="product">
+                <label>Seed Name
+                    <select id="product" name="product">
+                        <option value="" disabled selected>Choose a Seed...</option>
+                        <!-- Options will populate dynamically -->
+                    </select>
+                </label>
+            </fieldset>
+            <div id="seed-details"></div>
         </div>
+        <div id="all-seed-images" class="seed-gallery"></div>
+        <div class="seed-display-container">
+            <div class="seed-image-container">
+                <figure>
+                    <img id="selected-seed-image" src="" alt="" width="250">
+                    <figcaption id="selected-seed-caption"></figcaption>
+                </figure>
+            </div>
+        </div>
+       
 
-        <div class="container">
-            <figure>
-                <img class="hover" src="images/acorn.jpg" alt="acorn squash" width="250">
-                <figcaption>Acorn Squash</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/armenian.jpg" alt="armenian cucumber" width="250">
-                <figcaption>Armenian Cucumber</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/bush-bean.jpg" alt="Bush beans" width="250">
-                <figcaption>Bush Beans</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/butternut.jpg" alt="butternut squash" width="250">
-                <figcaption>Butternut Squash</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/cabbage.jpg" alt="cabbage" width="250">
-                <figcaption>Cabbage</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/carrot.jpg" alt="carrots" width="250">
-                <figcaption>Carrots</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/cucumber.jpg" alt="cucumber" width="250">
-                <figcaption>Cucumber</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/dark-beet.jpg" alt="dark beet" width="250">
-                <figcaption>Dark Red Beets</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/radish.jpg" alt="radish" width="250">
-                <figcaption>Radishs</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/red-beet.jpg" alt="red beet" width="250">
-                <figcaption>Red Beets</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/straightneck.jpg" alt="straightneck squash" width="250">
-                <figcaption>Straightneck Squash</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/sugar-snap-pea.jpg" alt="sugar snap peas" width="250">
-                <figcaption>Sugar Snap Peas</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hover" src="images/turnip.jpg" alt="turnips" width="250">
-                <figcaption>Turnips</figcaption>
-            </figure>
-            <figure>
-                <img class="hover" src="images/zucchini.jpg" alt="zucchini" width="250">
-                <figcaption>Zucchini</figcaption>
-            </figure>
-        </div>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> 🛡️ Scott Wilberg 🛡️ Utah</p>

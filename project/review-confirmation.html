@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Confirmation</title>
+</head>
+
+<body>
+    <h1>Thank you for your request!</h1>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let reviewCount = localStorage.getItem("reviewCount") || 0;
+            reviewCount = parseInt(reviewCount) + 1;
+            localStorage.setItem("reviewCount", reviewCount);
+
+            const counterDisplay = document.createElement("p");
+            counterDisplay.textContent = `You have submitted ${reviewCount} request(s).`;
+            document.body.appendChild(counterDisplay);
+        });
+    </script>
+</body>
+
+</html>
